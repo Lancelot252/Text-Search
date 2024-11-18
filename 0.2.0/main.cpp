@@ -46,6 +46,35 @@ vector<string> searchKeyword(const unordered_map<string, vector<string>>& hashTa
     return {};
 }
 
+void language(vector<string> &prmtext,int type){
+    if (type == 1) {
+        prmtext.push_back("welcome to use this program");
+        prmtext.push_back("This program is used to search for sentences containing a keyword in a text file");
+        prmtext.push_back("The text file must be named 'text.txt' and must be in the same directory as the executable");
+        prmtext.push_back("Currently only supports searching in English");
+        prmtext.push_back("Failed to open text.txt");
+        prmtext.push_back("Enter a keyword to search (or type 'exit' to quit): ");
+        prmtext.push_back("No sentences found containing the keyword: ");
+    } else if (type == 2)
+    {
+        prmtext.push_back("欢迎使用本程序");
+        prmtext.push_back("本程序用于在文本文件中搜索包含关键字的句子");
+        prmtext.push_back("文本文件必须命名为'text.txt'，并且必须与可执行文件在同一目录中");
+        prmtext.push_back("目前仅支持英文搜索");
+        prmtext.push_back("无法打开text.txt");
+        prmtext.push_back("输入要搜索的关键字(或输入'exit'退出): ");
+        prmtext.push_back("未找到包含关键字的句子: ");
+    }else if(type == 3){
+        prmtext.push_back("このプログラムを使用していただきありがとうございます");
+        prmtext.push_back("このプログラムは、テキストファイル内のキーワードを含む文を検索するために使用されます");
+        prmtext.push_back("テキストファイルは'text.txt'という名前でなければならず、実行可能ファイルと同じディレクトリにある必要があります");
+        prmtext.push_back("現在、英語のみをサポートしています");
+        prmtext.push_back("text.txtを開けませんでした");
+        prmtext.push_back("検索するキーワードを入力してください('exit'と入力して終了): ");
+        prmtext.push_back("キーワードを含む文が見つかりませんでした: ");
+    }
+}
+
 int main() {
     cout << "********************************" << endl;
     cout << "*                              *" << endl;
@@ -58,30 +87,12 @@ int main() {
     cout << "********************************" << endl;
     
     cout << "Algorithm Project Version 0.2.2" << endl;
-    cout << "Please choose your language(1.English 2.中文): ";
-    int language;
-    cin >> language;
+    cout << "Please choose your language(1.English 2.中文 3.日本語): ";
+    int language_type;
+    cin >> language_type;
 
     vector<string> prmtext;
-
-    if (language == 1) {
-        prmtext.push_back("welcome to use this program");
-        prmtext.push_back("This program is used to search for sentences containing a keyword in a text file");
-        prmtext.push_back("The text file must be named 'text.txt' and must be in the same directory as the executable");
-        prmtext.push_back("Currently only supports searching in English");
-        prmtext.push_back("Failed to open text.txt");
-        prmtext.push_back("Enter a keyword to search (or type 'exit' to quit): ");
-        prmtext.push_back("No sentences found containing the keyword: ");
-    } else if (language == 2)
-    {
-        prmtext.push_back("欢迎使用本程序");
-        prmtext.push_back("本程序用于在文本文件中搜索包含关键字的句子");
-        prmtext.push_back("文本文件必须命名为'text.txt'，并且必须与可执行文件在同一目录中");
-        prmtext.push_back("目前仅支持英文搜索");
-        prmtext.push_back("无法打开text.txt");
-        prmtext.push_back("输入要搜索的关键字(或输入'exit'退出): ");
-        prmtext.push_back("未找到包含关键字的句子: ");
-    }
+    language(prmtext,language_type);//language setting
     
     for(int i=0;i<4;i++){
         cout << prmtext[i] << endl;
