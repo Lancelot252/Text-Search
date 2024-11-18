@@ -72,6 +72,14 @@ void language(vector<string> &prmtext,int type){
         prmtext.push_back("text.txtを開けませんでした");
         prmtext.push_back("検索するキーワードを入力してください('exit'と入力して終了): ");
         prmtext.push_back("キーワードを含む文が見つかりませんでした: ");
+    }else if(type == 4){
+        prmtext.push_back("Bienvenue dans ce programme");
+        prmtext.push_back("Ce programme est utilisé pour rechercher des phrases contenant un mot-clé dans un fichier texte");
+        prmtext.push_back("Le fichier texte doit être nommé 'text.txt' et doit se trouver dans le même répertoire que l'exécutable");
+        prmtext.push_back("Prend actuellement en charge la recherche en anglais uniquement");
+        prmtext.push_back("Impossible d'ouvrir text.txt");
+        prmtext.push_back("Entrez un mot-clé à rechercher (ou tapez 'exit' pour quitter): ");
+        prmtext.push_back("Aucune phrase contenant le mot-clé n'a été trouvée: ");
     }
 }
 
@@ -87,7 +95,7 @@ int main() {
     cout << "********************************" << endl;
     
     cout << "Algorithm Project Version 0.2.2" << endl;
-    cout << "Please choose your language(1.English 2.中文 3.日本語): ";
+    cout << "Please choose your language(1.English 2.中文 3.日本語 4.Français): ";
     int language_type;
     cin >> language_type;
 
