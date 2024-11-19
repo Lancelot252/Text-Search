@@ -9,37 +9,37 @@
 
 using namespace std;
 
-// Function to split text into sentences
+// 将文本拆分成句子的函数
 vector<string> splitIntoSentences(const string& text) {
     vector<string> sentences;
     stringstream ss(text);
     string sentence;
     while (getline(ss, sentence, '.')) {
         if (!sentence.empty()) {
-            sentences.push_back(sentence + ".");
+            sentences.push_back(sentence + ".");//将句子存入vector
         }
     }
     return sentences;
 }
 
-// Function to build the hash table
+// 构建哈希表的函数
 unordered_map<string, vector<string>> buildHashTable(const vector<string>& sentences) {
-    unordered_map<string, vector<string>> hashTable;
+    unordered_map<string, vector<string>> hashTable;//哈希表
     for (const auto& sentence : sentences) {
-        stringstream ss(sentence);
-        string word;
+        stringstream ss(sentence);//将句子转换为字符串流
+        string word;//存储单词
         while (ss >> word) {
-            // Remove punctuation from the word
+            // 去除单词中的标点符号
             word.erase(remove_if(word.begin(), word.end(), ::ispunct), word.end());
-            hashTable[word].push_back(sentence);
+            hashTable[word].push_back(sentence);//将单词和句子存入哈希表
         }
     }
     return hashTable;
 }
 
-// Function to search for a keyword in the hash table
+// 在哈希表中搜索关键字的函数
 vector<string> searchKeyword(const unordered_map<string, vector<string>>& hashTable, const string& keyword) {
-    auto it = hashTable.find(keyword);
+    auto it = hashTable.find(keyword);//在哈希表中查找关键字
     if (it != hashTable.end()) {
         return it->second;
     }
@@ -81,7 +81,7 @@ void language(vector<string> &prmtext,int type){
         prmtext.push_back("Entrez un mot-clé à rechercher (ou tapez 'exit' pour quitter): ");
         prmtext.push_back("Aucune phrase contenant le mot-clé n'a été trouvée: ");
     }
-}
+}//设置语言
 
 int main() {
     cout << "********************************" << endl;
@@ -100,7 +100,7 @@ int main() {
     cin >> language_type;
 
     vector<string> prmtext;
-    language(prmtext,language_type);//language setting
+    language(prmtext,language_type);//设置语言
     
     for(int i=0;i<4;i++){
         cout << prmtext[i] << endl;
@@ -117,13 +117,13 @@ int main() {
     string text = buffer.str();
     file.close();
 
-    // Split text into sentences
+    // 将文本拆分成句子
     vector<string> sentences = splitIntoSentences(text);
 
-    // Build the hash table
+    // 构建哈希表
     unordered_map<string, vector<string>> hashTable = buildHashTable(sentences);
 
-    // Read queries from user input
+    // 从用户输入读取查询
     string query;
     while (true) {
         cout << prmtext[5];
