@@ -23,10 +23,14 @@ public class WelcomeScreen extends JFrame {
             }
         });
 
+        JLabel madeByLabel = new JLabel("made by 252", SwingConstants.CENTER);
+        madeByLabel.setFont(new Font("Arial", Font.PLAIN, 12));
+
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.add(welcomeLabel, BorderLayout.CENTER);
         panel.add(continueButton, BorderLayout.SOUTH);
+        panel.add(madeByLabel, BorderLayout.NORTH);
 
         add(panel);
     }
