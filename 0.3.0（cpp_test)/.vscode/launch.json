@@ -1,0 +1,23 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "QtBuild",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${command:cmake.launchTargetPath}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "D:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin"
+                }
+            ],
+            "externalConsole": false,
+            "miDebuggerPath": "D:/Qt/Qt5.14.2/Tools/mingw730_64/bin/gdb.exe"
+        }
+    ]
+}

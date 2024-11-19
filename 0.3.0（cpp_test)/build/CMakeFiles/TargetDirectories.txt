@@ -1,0 +1,4 @@
+D:/project/github/Text-Search/0.3.0/build/CMakeFiles/TextSearchApp.dir
+D:/project/github/Text-Search/0.3.0/build/CMakeFiles/edit_cache.dir
+D:/project/github/Text-Search/0.3.0/build/CMakeFiles/rebuild_cache.dir
+D:/project/github/Text-Search/0.3.0/build/CMakeFiles/TextSearchApp_autogen.dir

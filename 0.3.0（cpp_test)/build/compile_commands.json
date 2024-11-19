@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/project/github/Text-Search/0.3.0/build",
+  "command": "D:\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/TextSearchApp.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\TextSearchApp.dir\\TextSearchApp_autogen\\mocs_compilation.cpp.obj -c D:\\project\\github\\Text-Search\\0.3.0\\build\\TextSearchApp_autogen\\mocs_compilation.cpp",
+  "file": "D:/project/github/Text-Search/0.3.0/build/TextSearchApp_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/TextSearchApp.dir/TextSearchApp_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "D:/project/github/Text-Search/0.3.0/build",
+  "command": "D:\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/TextSearchApp.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\TextSearchApp.dir\\src\\TextSearchApp.cpp.obj -c D:\\project\\github\\Text-Search\\0.3.0\\src\\TextSearchApp.cpp",
+  "file": "D:/project/github/Text-Search/0.3.0/src/TextSearchApp.cpp",
+  "output": "CMakeFiles/TextSearchApp.dir/src/TextSearchApp.cpp.obj"
+},
+{
+  "directory": "D:/project/github/Text-Search/0.3.0/build",
+  "command": "D:\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/TextSearchApp.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\TextSearchApp.dir\\src\\main.cpp.obj -c D:\\project\\github\\Text-Search\\0.3.0\\src\\main.cpp",
+  "file": "D:/project/github/Text-Search/0.3.0/src/main.cpp",
+  "output": "CMakeFiles/TextSearchApp.dir/src/main.cpp.obj"
+}
+]
