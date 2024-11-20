@@ -17,7 +17,7 @@ public class TextSearchApp extends JFrame {
         textSearch = new TextSearch();
 
         setTitle("Text Search App");
-        setSize(800, 600); // 设置窗口大小
+        setSize(1280, 720); // 设置窗口大小
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 

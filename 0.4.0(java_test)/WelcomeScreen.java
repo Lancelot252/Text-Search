@@ -7,12 +7,12 @@ public class WelcomeScreen extends JFrame {
 
     public WelcomeScreen() {
         setTitle("Welcome");
-        setSize(400, 200);
+        setSize(800, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
         JLabel welcomeLabel = new JLabel("Welcome to Text Search App", SwingConstants.CENTER);
-        welcomeLabel.setFont(new Font("Arial", Font.BOLD, 18));
+        welcomeLabel.setFont(new Font("Arial", Font.BOLD, 48));
 
         JButton continueButton = new JButton("Continue");
         continueButton.setPreferredSize(new Dimension(100, 30));
