@@ -26,13 +26,14 @@ int main() {
     for(int i=0;i<4;i++){
         cout << prmtext[i] << endl;
     }
-    // Read the text from file
+    // 读取文本文件
     ifstream file("text.txt");
     if (!file.is_open()) {
         cerr << prmtext[4] << endl;
         return 1;
     }
 
+    // 读取文本内容
     stringstream buffer;
     buffer << file.rdbuf();
     string text = buffer.str();
@@ -41,6 +42,7 @@ int main() {
     // 将文本拆分成句子
     vector<string> sentences = splitIntoSentences(text);
 
+    // 选择哈希函数类型
     cout << prmtext[5] << endl;
     int hash_function_type;
     cin >> hash_function_type;
