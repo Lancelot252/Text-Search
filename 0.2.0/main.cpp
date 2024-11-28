@@ -5,17 +5,17 @@ using namespace std;
 
 
 int main() {
-    cout << "********************************" << endl;
-    cout << "*                              *" << endl;
-    cout << "*     ***   *****  ***         *" << endl;
-    cout << "*    *   *  *     *   *        *" << endl;
-    cout << "*       *   *****    *         *" << endl;
-    cout << "*      *        *   *          *" << endl;
-    cout << "*     ***** *****  *****       *" << endl;
-    cout << "*                              *" << endl;
-    cout << "********************************" << endl;
+    cout << "////////////////////////////////" << endl;
+    cout << "//                            //" << endl;
+    cout << "//     ***   *****  ***       //" << endl;
+    cout << "//    *   *  *     *   *      //" << endl;
+    cout << "//       *   *****    *       //" << endl;
+    cout << "//      *        *   *        //" << endl;
+    cout << "//     ***** *****  *****     //" << endl;
+    cout << "//                            //" << endl;
+    cout << "////////////////////////////////" << endl;
     
-    cout << "Algorithm Project Version 0.2.2" << endl;
+    cout << "Algorithm Project Version 0.2.7" << endl;
     cout << "Please choose your language(1.English 2.中文 3.日本語 4.Français): ";
     int language_type;
     cin >> language_type;
@@ -41,23 +41,66 @@ int main() {
     // 将文本拆分成句子
     vector<string> sentences = splitIntoSentences(text);
 
-    // 构建哈希表
-    unordered_map<string, vector<string>> hashTable = buildHashTable(sentences);
+    cout << prmtext[5] << endl;
+    int hash_function_type;
+    cin >> hash_function_type;
 
-    // 从用户输入读取查询
-    string query;
-    while (true) {
-        cout << prmtext[5];
-        cin >> query;
-        if (query == "exit") {
-            break;
+    // 构建哈希表
+    if (hash_function_type == 1) {
+        unordered_map<string, vector<string>> hashTable = buildHashTable(sentences);
+        // 从用户输入读取查询
+        string query;
+        while (true) {
+            cout << prmtext[6];
+            cin >> query;
+            if (query == "exit") {
+                break;
+            }
+            vector<string> results = searchKeyword(hashTable, query);
+            if (results.empty()) {
+                cout <<prmtext[7]<< query << endl;
+            } else {
+                for (const auto& result : results) {
+                    cout << "\t" << result << endl;
+                }
+            }
         }
-        vector<string> results = searchKeyword(hashTable, query);
-        if (results.empty()) {
-            cout <<prmtext[6]<< query << endl;
-        } else {
-            for (const auto& result : results) {
-                cout << "\t" << result << endl;
+    } else if (hash_function_type == 2) {
+        unordered_map<string, vector<string>> hashTable = buildCustomHashTable(sentences);
+        // 从用户输入读取查询
+        string query;
+        while (true) {
+            cout << prmtext[6];
+            cin >> query;
+            if (query == "exit") {
+                break;
+            }
+            vector<string> results = searchKeyword(hashTable, query);
+            if (results.empty()) {
+                cout <<prmtext[7]<< query << endl;
+            } else {
+                for (const auto& result : results) {
+                    cout << "\t" << result << endl;
+                }
+            }
+        }
+    } else if (hash_function_type == 3) {
+        unordered_map<string, list<string>> hashTable = buildChainedHashTable(sentences);
+        // 从用户输入读取查询
+        string query;
+        while (true) {
+            cout << prmtext[6];
+            cin >> query;
+            if (query == "exit") {
+                break;
+            }
+            list<string> results = searchKeyword(hashTable, query);
+            if (results.empty()) {
+                cout <<prmtext[7]<< query << endl;
+            } else {
+                for (const auto& result : results) {
+                    cout << "\t" << result << endl;
+                }
             }
         }
     }
