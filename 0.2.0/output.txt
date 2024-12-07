@@ -1,0 +1,582 @@
+////////////////////////////////
+//                            //
+//     ***   *****  ***       //
+//    *   *  *     *   *      //
+//       *   *****    *       //
+//      *        *   *        //
+//     ***** *****  *****     //
+//                            //
+////////////////////////////////
+Algorithm Project Version 0.2.7
+Please choose your language(1.English 2.中文 3.日本語 4.Français): 2
+欢迎使用本程序
+本程序用于在文本文件中搜索包含关键字的句子
+文本文件必须命名为'text.txt'，并且必须与可执行文件在同一目录中
+目前仅支持英文搜索
+请选择您的哈希函数（1. 默认 2. 自定义 3. 链式）：
+1
+输入要搜索的关键字（或输入'exit'退出）：head
+         He will crush your head, and you will strike his heel.
+         And taking one of the stones from that place, he put it under his head and lay down to sleep.
+        ”
+Genesis 28:17   And he was afraid and said, “How awesome is this place! This is none other than the house of God; this is the gate of heaven!”
+Genesis 28:18   Early the next morning, Jacob took the stone that he had placed under his head, and he set it up as a pillar.
+
+Genesis 40:13   Within three days Pharaoh will lift up your head and restore your position.
+        ”
+Genesis 40:16   When the chief baker saw that the interpretation was favorable, he said to Joseph, “I too had a dream: There were three baskets of white bread on my head.
+
+Genesis 40:17   In the top basket were all sorts of baked goods for Pharaoh, but the birds were eating them out of the basket on my head.
+
+Genesis 40:19   Within three days Pharaoh will lift off your head and hang you on a tree.
+         So Joseph swore to him, and Israel bowed in worship at the head of his bed.
+
+Genesis 48:14   But Israel stretched out his right hand and put it on the head of Ephraim, the younger; and crossing his hands, he put his left on Manasseh’s head, although Manasseh was the firstborn.
+
+Genesis 48:14   But Israel stretched out his right hand and put it on the head of Ephraim, the younger; and crossing his hands, he put his left on Manasseh’s head, although Manasseh was the firstborn.
+        ”
+Genesis 48:17   When Joseph saw that his father had placed his right hand on Ephraim’s head, he was displeased and took his father’s hand to move it from Ephraim’s head to Manasseh’s.
+        ”
+Genesis 48:17   When Joseph saw that his father had placed his right hand on Ephraim’s head, he was displeased and took his father’s hand to move it from Ephraim’s head to Manasseh’s.
+         “This one is the firstborn; put your right hand on his head.
+         May they rest on the head of Joseph, on the brow of the prince of his brothers.
+
+Exodus 12:9     Do not eat any of the meat raw or cooked in boiling water, but only roasted over the fire—its head and legs and inner parts.
+
+Exodus 29:6     Put the turban on his head and attach the holy diadem to the turban.
+
+Exodus 29:7     Then take the anointing oil and anoint him by pouring it on his head.
+
+Exodus 29:10    You are to present the bull at the front of the Tent of Meeting, and Aaron and his sons are to lay their hands on its head.
+
+Exodus 29:15    Take one of the rams, and Aaron and his sons shall lay their hands on its head.
+
+Exodus 29:17    Cut the ram into pieces, wash the entrails and legs, and place them with its head and other pieces.
+
+Exodus 29:19    Take the second ram, and Aaron and his sons are to lay their hands on its head.
+
+Leviticus 1:4   He is to lay his hand on the head of the burnt offering, so it can be accepted on his behalf to make atonement for him.
+
+Leviticus 1:8   Then Aaron’s sons the priests are to arrange the pieces, including the head and the fat, atop the burning wood on the altar.
+
+Leviticus 1:12  He is to cut the animal into pieces, and the priest shall arrange them, including the head and fat, atop the burning wood that is on the altar.  
+
+Leviticus 1:15  Then the priest shall bring it to the altar, twist off its head, and burn it on the altar; its blood should be drained out on the side of the altar.
+
+Leviticus 3:2   He is to lay his hand on the head of the offering and slaughter it at the entrance to the Tent of Meeting.
+
+Leviticus 3:8   He is to lay his hand on the head of his offering and slaughter it in front of the Tent of Meeting.
+
+Leviticus 3:13  He must lay his hand on its head and slaughter it in front of the Tent of Meeting.
+
+Leviticus 4:4   He must bring the bull to the entrance to the Tent of Meeting before the LORD, lay his hand on the bull’s head, and slaughter it before the LORD.
+
+Leviticus 4:11  But the hide of the bull and all its flesh, with its head and legs and its entrails and dung—
+Leviticus 4:12  all the rest of the bull—he must take outside the camp to a ceremonially clean place where the ashes are poured out, and there he must burn it on a wood fire on the ash heap.
+
+Leviticus 4:15  The elders of the congregation are to lay their hands on the bull’s head before the LORD, and it shall be slaughtered before the LORD.
+
+Leviticus 4:24  He is to lay his hand on the head of the goat and slaughter it at the place where the burnt offering is slaughtered before the LORD.
+
+Leviticus 4:29  He is to lay his hand on the head of the sin offering and slaughter it at the place of the burnt offering.
+
+Leviticus 4:33  And he is to lay his hand on the head of the sin offering and slaughter it as a sin offering at the place where the burnt offering is slaughtered.
+         He is to twist its head at the front of its neck without severing it;
+Leviticus 5:9   then he is to sprinkle some of the blood of the sin offering on the side of the altar, while the rest of the blood is drained out at the base of the altar.
+
+Leviticus 8:9   Moses also put the turban on Aaron’s head and set the gold plate, the holy diadem, on the front of the turban, as the LORD had commanded him.    
+
+Leviticus 8:12  He also poured some of the anointing oil on Aaron’s head and anointed him to consecrate him.
+
+Leviticus 8:14  Moses then brought the bull near for the sin offering, and Aaron and his sons laid their hands on its head.
+
+Leviticus 8:18  Then Moses presented the ram for the burnt offering, and Aaron and his sons laid their hands on its head.
+
+Leviticus 8:20  He cut the ram into pieces and burned the head, the pieces, and the fat.
+
+Leviticus 8:22  After that, Moses presented the other ram, the ram of ordination, and Aaron and his sons laid their hands on its head.
+
+Leviticus 9:13  They brought him the burnt offering piece by piece, including the head, and he burned them on the altar.
+
+Leviticus 13:12 But if the skin disease breaks out all over his skin so that it covers all the skin of the infected person from head to foot, as far as the priest can see,
+Leviticus 13:13 the priest shall examine him, and if the disease has covered his entire body, he is to pronounce the infected person clean.
+
+Leviticus 13:29 If a man or woman has an infection on the head or chin,
+Leviticus 13:30 the priest shall examine the infection, and if it appears to be deeper than the skin and the hair in it is yellow and thin, the priest must pronounce him unclean; it is a scaly outbreak, an infectious disease of the head or chin.
+
+Leviticus 13:29 If a man or woman has an infection on the head or chin,
+Leviticus 13:30 the priest shall examine the infection, and if it appears to be deeper than the skin and the hair in it is yellow and thin, the priest must pronounce him unclean; it is a scaly outbreak, an infectious disease of the head or chin.
+
+Leviticus 13:42 But if there is a reddish-white sore on the bald head or forehead, it is an infectious disease breaking out on it.
+
+Leviticus 13:43 The priest is to examine him, and if the swelling of the infection on his bald head or forehead is reddish-white like a skin disease,
+Leviticus 13:44 the man is diseased; he is unclean.
+         The priest must pronounce him unclean because of the infection on his head.
+
+Leviticus 14:9  On the seventh day he must shave off all his hair—his head, his beard, his eyebrows, and the rest of his hair.
+
+Leviticus 14:18 The rest of the oil in his palm, the priest is to put on the head of the one to be cleansed, to make atonement for him before the LORD.
+
+Leviticus 14:29 The rest of the oil in his palm, the priest is to put on the head of the one to be cleansed, to make atonement for him before the LORD.
+
+Leviticus 16:21 Then he is to lay both hands on the head of the live goat and confess over it all the iniquities and rebellious acts of the Israelites in regard to all their sins.
+         He is to put them on the goat’s head and send it away into the wilderness by the hand of a man appointed for the task.
+
+Leviticus 19:27 You must not cut off the hair at the sides of your head or clip off the edges of your beard.
+
+Leviticus 21:10 The priest who is highest among his brothers, who has had the anointing oil poured on his head and has been ordained to wear the priestly garments, must not let his hair hang loose or tear his garments.
+
+Leviticus 24:13 Then the LORD said to Moses,
+Leviticus 24:14 “Take the blasphemer outside the camp, and have all who heard him lay their hands on his head; then have the whole assembly stone him.
+输入要搜索的关键字（或输入'exit'退出）：
+PS D:\project\github\Text-Search\0.2.0> ^C
+PS D:\project\github\Text-Search\0.2.0> 
+PS D:\project\github\Text-Search\0.2.0>  & 'c:\Users\rog\.vscode\extensions\ms-vscode.cpptools-1.22.11-win32-x64\debugAdapters\bin\WindowsDebugLauncher.exe' '--stdin=Microsoft-MIEngine-In-odgr0cnp.0pe' '--stdout=Microsoft-MIEngine-Out-wiculvlm.lii' '--stderr=Microsoft-MIEngine-Error-xp5q5wzk.mnt' '--pid=Microsoft-MIEngine-Pid-hhpkrwui.o0n' '--dbgExe=D:\Qt\Qt5.14.2\Tools\mingw730_64\bin\gdb.exe' '--interpreter=mi' 
+////////////////////////////////
+//                            //
+//     ***   *****  ***       //
+//    *   *  *     *   *      //
+//       *   *****    *       //
+//      *        *   *        //
+//     ***** *****  *****     //
+//                            //
+////////////////////////////////
+Algorithm Project Version 0.2.7
+Please choose your language(1.English 2.中文 3.日本語 4.Français): 2
+欢迎使用本程序
+本程序用于在文本文件中搜索包含关键字的句子
+文本文件必须命名为'text.txt'，并且必须与可执行文件在同一目录中
+目前仅支持英文搜索
+请选择您的哈希函数（1. 默认 2. 自定义 3. 链式）：
+1
+输入要搜索的关键字（或输入'exit'退出）：firstborn
+
+Genesis 4:3     So in the course of time, Cain brought some of the fruit of the soil as an offering to the LORD,
+Genesis 4:4     while Abel brought the best portions of the firstborn of his flock.
+
+Genesis 10:15   And Canaan was the father of Sidon his firstborn, and of the Hittites,
+Genesis 10:16   the Jebusites, the Amorites, the Girgashites,
+Genesis 10:17   the Hivites, the Arkites, the Sinites,
+Genesis 10:18   the Arvadites, the Zemarites, and the Hamathites.
+        ”
+Genesis 19:33   So that night they got their father drunk with wine, and the firstborn went in and slept with her father; he was not aware when she lay down or when she got up.
+
+Genesis 22:20   Some time later, Abraham was told, “Milcah has also borne sons to your brother Nahor:
+Genesis 22:21   Uz the firstborn, his brother Buz, Kemuel (the father of Aram),
+Genesis 22:22   Chesed, Hazo, Pildash, Jidlaph, and Bethuel.
+
+Genesis 25:13   These are the names of the sons of Ishmael in the order of their birth: Nebaioth the firstborn of Ishmael, then Kedar, Adbeel, Mibsam,
+Genesis 25:14   Mishma, Dumah, Massa,
+Genesis 25:15   Hadad, Tema, Jetur, Naphish, and Kedemah.
+         “Which one are you, my son?”
+Genesis 27:19   Jacob said to his father, “I am Esau, your firstborn.
+        ”
+Genesis 27:32   But his father Isaac replied, “Who are you?” “I am Esau, your firstborn son,” he answered.
+         Jacob had twelve sons:
+Genesis 35:23   The sons of Leah were Reuben the firstborn of Jacob, Simeon, Levi, Judah, Issachar, and Zebulun.
+         The sons of Eliphaz the firstborn of Esau: Chiefs Teman, Omar, Zepho, Kenaz,
+Genesis 36:16   Korah, Gatam, and Amalek.
+
+Genesis 38:6    Now Judah acquired a wife for Er, his firstborn, and her name was Tamar.
+
+Genesis 38:7    But Er, Judah’s firstborn, was wicked in the sight of the LORD; so the LORD put him to death.
+
+Genesis 41:51   Joseph named the firstborn Manasseh, saying, “God has made me forget all my hardship and all my father’s household.
+
+Genesis 43:33   They were seated before Joseph in order by age, from the firstborn to the youngest, and the men looked at one another in astonishment.
+
+Genesis 46:8    Now these are the names of the sons of Israel (Jacob and his descendants) who went to Egypt: Reuben, Jacob’s firstborn.
+
+Genesis 48:14   But Israel stretched out his right hand and put it on the head of Ephraim, the younger; and crossing his hands, he put his left on Manasseh’s head, although Manasseh was the firstborn.
+         “This one is the firstborn; put your right hand on his head.
+
+Genesis 49:3    Reuben, you are my firstborn, my might, and the beginning of my strength, excelling in honor, excelling in power.
+
+Exodus 4:22     Then tell Pharaoh that this is what the LORD says: ‘Israel is My firstborn son,
+Exodus 4:23     and I told you to let My son go so that he may worship Me.
+         But since you have refused to let him go, behold, I will kill your firstborn son!’”
+Exodus 4:24     Now at a lodging place along the way, the LORD met Moses and was about to kill him.
+
+Exodus 6:14     These were the heads of their fathers’ houses: The sons of Reuben, the firstborn of Israel, were Hanoch and Pallu, Hezron and Carmi.
+
+Exodus 11:4     So Moses declared, “This is what the LORD says: ‘About midnight I will go throughout Egypt,
+Exodus 11:5     and every firstborn son in the land of Egypt will die, from the firstborn of Pharaoh who sits on his throne, to the firstborn of the servant girl behind the hand mill, as well as the firstborn of all the cattle.
+
+Exodus 11:4     So Moses declared, “This is what the LORD says: ‘About midnight I will go throughout Egypt,
+Exodus 11:5     and every firstborn son in the land of Egypt will die, from the firstborn of Pharaoh who sits on his throne, to the firstborn of the servant girl behind the hand mill, as well as the firstborn of all the cattle.
+
+Exodus 11:4     So Moses declared, “This is what the LORD says: ‘About midnight I will go throughout Egypt,
+Exodus 11:5     and every firstborn son in the land of Egypt will die, from the firstborn of Pharaoh who sits on his throne, to the firstborn of the servant girl behind the hand mill, as well as the firstborn of all the cattle.
+
+Exodus 11:4     So Moses declared, “This is what the LORD says: ‘About midnight I will go throughout Egypt,
+Exodus 11:5     and every firstborn son in the land of Egypt will die, from the firstborn of Pharaoh who sits on his throne, to the firstborn of the servant girl behind the hand mill, as well as the firstborn of all the cattle.
+
+Exodus 12:12    On that night I will pass through the land of Egypt and strike down every firstborn male, both man and beast, and I will execute judgment against all the gods of Egypt.
+
+Exodus 12:29    Now at midnight the LORD struck down every firstborn male in the land of Egypt, from the firstborn of Pharaoh, who sat on his throne, to the firstborn of the prisoner in the dungeon, as well as all the firstborn among the livestock.
+
+Exodus 12:29    Now at midnight the LORD struck down every firstborn male in the land of Egypt, from the firstborn of Pharaoh, who sat on his throne, to the firstborn of the prisoner in the dungeon, as well as all the firstborn among the livestock.
+
+Exodus 12:29    Now at midnight the LORD struck down every firstborn male in the land of Egypt, from the firstborn of Pharaoh, who sat on his throne, to the firstborn of the prisoner in the dungeon, as well as all the firstborn among the livestock.
+
+Exodus 12:29    Now at midnight the LORD struck down every firstborn male in the land of Egypt, from the firstborn of Pharaoh, who sat on his throne, to the firstborn of the prisoner in the dungeon, as well as all the firstborn among the livestock.
+
+Exodus 13:1     Then the LORD said to Moses,
+Exodus 13:2     “Consecrate to Me every firstborn male.
+         The firstborn from every womb among the Israelites belongs to Me, both of man and beast.
+
+Exodus 13:11    And after the LORD brings you into the land of the Canaanites and gives it to you, as He swore to you and your fathers,
+Exodus 13:12    you are to present to the LORD the firstborn male of every womb.
+         All the firstborn males of your livestock belong to the LORD.
+
+Exodus 13:13    You must redeem every firstborn donkey with a lamb, and if you do not redeem it, you are to break its neck.
+         And every firstborn of your sons you must redeem.
+
+Exodus 13:15    And when Pharaoh stubbornly refused to let us go, the LORD killed every firstborn in the land of Egypt, both of man and beast.
+         This is why I sacrifice to the LORD the firstborn male of every womb, but I redeem all the firstborn of my sons.
+         This is why I sacrifice to the LORD the firstborn male of every womb, but I redeem all the firstborn of my sons.
+         You are to give Me the firstborn of your sons.
+
+Exodus 34:19    The first offspring of every womb belongs to Me, including all the firstborn males among your livestock, whether cattle or sheep.
+
+Exodus 34:20    You must redeem the firstborn of a donkey with a lamb; but if you do not redeem it, you are to break its neck.
+         You must redeem all the firstborn of your sons.
+输入要搜索的关键字（或输入'exit'退出）：now
+
+Genesis 2:23    And the man said: “This is now bone of my bones and flesh of my flesh; she shall be called ‘woman,’ for out of man she was taken.
+         And now, lest he reach out his hand and take also from the tree of life, and eat, and live forever.
+
+Genesis 7:4     For seven days from now I will send rain on the earth for forty days and forty nights, and I will wipe from the face of the earth every living thing I have made.
+
+Genesis 9:3     Everything that lives and moves will be food for you; just as I gave you the green plants, I now give you all things.
+        ”
+Genesis 9:8     Then God said to Noah and his sons with him,
+Genesis 9:9     “Behold, I now establish My covenant with you and your descendants after you,
+Genesis 9:10    and with every living creature that was with you—the birds, the livestock, and every beast of the earth—every living thing that came out of the ark.
+
+Genesis 16:2    So Sarai said to Abram, “Look now, the LORD has prevented me from bearing children.
+
+Genesis 18:12   So she laughed to herself, saying, “After I am worn out and my master is old, will I now have this pleasure?”
+Genesis 18:13   And the LORD asked Abraham, “Why did Sarah laugh and say, ‘Can I really bear a child when I am old?’
+Genesis 18:14   Is anything too difficult for the LORD? At the appointed time I will return to you—in about a year—and Sarah will have a son.
+
+Genesis 22:12   “Do not lay a hand on the boy or do anything to him,” said the angel, “for now I know that you fear God, since you have not withheld your only son from me.
+
+Genesis 24:1    By now Abraham was old and well along in years, and the LORD had blessed him in every way.
+         “We recommend that there should now be an oath between us and you.
+         And now you are blessed by the LORD.
+
+Genesis 27:2    “Look,” said Isaac, “I am now old, and I do not know the day of my death.
+         He took my birthright, and now he has taken my blessing.
+
+Genesis 27:43   So now, my son, obey my voice and flee at once to my brother Laban in Haran.
+         I will give you and your descendants the land on which you now lie.
+         Surely my husband will love me now.
+
+Genesis 30:30   Indeed, you had very little before my arrival, but now your wealth has increased many times over.
+         But now, when may I also provide for my own household?”
+Genesis 30:31   “What can I give you?” Laban asked.
+
+Genesis 31:38   I have been with you for twenty years now.
+
+Genesis 31:41   Thus for twenty years I have served in your household—fourteen years for your two daughters and six years for your flocks—and you have changed my wages ten times!
+Genesis 31:42   If the God of my father, the God of Abraham and the Fear of Isaac, had not been with me, surely by now you would have sent me away empty-handed. 
+        ”
+Genesis 31:43   But Laban answered Jacob, “These daughters are my daughters, these sons are my sons, and these flocks are my flocks! Everything you see is mine! Yet what can I do today about these daughters of mine or the children they have borne?
+Genesis 31:44   Come now, let us make a covenant, you and I, and let it serve as a witness between you and me.
+
+Genesis 32:4    He instructed them, “You are to say to my master Esau, ‘Your servant Jacob says: I have been staying with Laban and have remained there until now.
+        ’”
+Genesis 32:6    When the messengers returned to Jacob, they said, “We went to your brother Esau, and now he is coming to meet you—he and four hundred men with him.
+         Indeed, with only my staff I came across the Jordan, but now I have become two camps.
+
+Genesis 37:14   Then Israel told him, “Go now and see how your brothers and the flocks are faring, and bring word back to me.
+
+Genesis 37:20   “Come now, let us kill him and throw him into one of the pits.
+
+Genesis 38:16   Not realizing that she was his daughter-in-law, he went over to her and said, “Come now, let me sleep with you.
+        ”
+Genesis 38:24   About three months later, Judah was told, “Your daughter-in-law Tamar has prostituted herself, and now she is pregnant.
+         The youngest is now with our father, and one is no more.
+         One is no more, and the youngest is now with our father in the land of Canaan.
+
+Genesis 43:10   If we had not delayed, we could have come and gone twice by now.
+         We are now my lord’s slaves—both we and the one who was found with the cup.
+         “I am Joseph, your brother,” he said, “the one you sold into Egypt!
+Genesis 45:5    And now, do not be distressed or angry with yourselves that you sold me into this place, because it was to save lives that God sent me before you.
+
+Genesis 46:30   Then Israel said to Joseph, “Finally I can die, now that I have seen your face and know that you are still alive!”
+Genesis 46:31   Joseph said to his brothers and to his father’s household, “I will go up and inform Pharaoh: ‘My brothers and my father’s household from the land of Canaan have come to me.
+        ”
+Genesis 47:1    So Joseph went and told Pharaoh: “My father and my brothers, with their flocks and herds and all they own, have come from the land of Canaan and are now in Goshen.
+         So now, please allow your servants to settle in the land of Goshen.
+        ’
+Genesis 48:5    And now your two sons born to you in Egypt before I came to you here shall be reckoned as mine; Ephraim and Manasseh shall be mine, just as Reuben and Simeon are mine.
+
+Genesis 48:11   “I never expected to see your face again,” Israel said to Joseph, “but now God has let me see your children as well.
+        ’ So now, Joseph, please forgive the transgression of the servants of the God of your father.
+
+Exodus 3:9      And now the cry of the Israelites has reached Me, and I have seen how severely the Egyptians are oppressing them.
+        ”
+Exodus 4:14     Then the anger of the LORD burned against Moses, and He said, “Is not Aaron the Levite your brother? I know that he can speak well, and he is now on his way to meet you.
+        ”
+Exodus 5:4      But the king of Egypt said to them, “Moses and Aaron, why do you draw the people away from their work? Get back to your labor!”
+Exodus 5:5      Pharaoh also said, “Look, the people of the land are now numerous, and you would be stopping them from their labor.
+         But you have not listened until now.
+
+Exodus 9:18     Behold, at this time tomorrow I will rain down the worst hail that has ever fallen on Egypt, from the day it was founded until now.
+
+Exodus 9:19     So give orders now to shelter your livestock and everything you have in the field.
+
+Exodus 32:32    Yet now, if You would only forgive their sin.
+输入要搜索的关键字（或输入'exit'退出）：punishment
+        ”
+Genesis 4:13    But Cain said to the LORD, “My punishment is greater than I can bear.
+
+Genesis 19:15   At daybreak the angels hurried Lot along, saying, “Get up! Take your wife and your two daughters who are here, or you will be swept away in the punishment of the city.
+
+Leviticus 5:17  If someone sins and violates any of the LORD’s commandments even though he was unaware, he is guilty and shall bear his punishment.
+
+Leviticus 19:20 If a man lies carnally with a slave girl promised to another man but who has not been redeemed or given her freedom, there must be due punishment.
+
+Leviticus 22:15 The priests must not profane the sacred offerings that the Israelites present to the LORD
+Leviticus 22:16 by allowing the people to eat the sacred offerings and thus to bear the punishment for guilt.
+输入要搜索的关键字（或输入'exit'退出）：bread
+
+Genesis 3:19    By the sweat of your brow you will eat your bread, until you return to the ground—because out of it were you taken.
+
+Genesis 14:18   Then Melchizedek king of Salem brought out bread and wine—since he was priest of God Most High—
+Genesis 14:19   and he blessed Abram and said: “Blessed be Abram by God Most High, Creator of heaven and earth,
+Genesis 14:20   and blessed be God Most High, who has delivered your enemies into your hand.
+
+Genesis 18:5    And I will bring a bit of bread so that you may refresh yourselves.
+        ”
+Genesis 18:6    So Abraham hurried into the tent and said to Sarah, “Quick! Prepare three seahs of fine flour, knead it, and bake some bread.
+         He prepared a feast for them and baked unleavened bread, and they ate.
+        ”
+Genesis 21:14   Early in the morning, Abraham got up, took bread and a skin of water, put them on Hagar’s shoulders, and sent her away with the boy.
+
+Genesis 25:34   Then Jacob gave some bread and lentil stew to Esau, who ate and drank and then got up and went away.
+
+Genesis 27:17   Then she handed her son Jacob the tasty food and bread she had made.
+        ”
+Genesis 40:16   When the chief baker saw that the interpretation was favorable, he said to Joseph, “I too had a dream: There were three baskets of white bread on my head.
+
+Genesis 45:23   And he sent to his father the following: ten donkeys loaded with the best of Egypt, and ten female donkeys loaded with grain and bread and provisions for his father’s journey.
+
+Exodus 12:8     They are to eat the meat that night, roasted over the fire, along with unleavened bread and bitter herbs.
+
+Exodus 12:15    For seven days you must eat unleavened bread.
+
+Exodus 12:18    In the first month you are to eat unleavened bread, from the evening of the fourteenth day until the evening of the twenty-first day.
+
+Exodus 12:20    You are not to eat anything leavened; eat unleavened bread in all your homes.
+
+Exodus 13:6     For seven days you are to eat unleavened bread, and on the seventh day there shall be a feast to the LORD.
+
+Exodus 13:7     Unleavened bread shall be eaten during those seven days.
+         “There we sat by pots of meat and ate our fill of bread, but you have brought us into this desert to starve this whole assembly to death!”
+Exodus 16:4     Then the LORD said to Moses, “Behold, I will rain down bread from heaven for you.
+         “There we sat by pots of meat and ate our fill of bread, but you have brought us into this desert to starve this whole assembly to death!”
+Exodus 16:4     Then the LORD said to Moses, “Behold, I will rain down bread from heaven for you.
+         For who are we that you should grumble against us?”
+Exodus 16:8     And Moses added, “The LORD will give you meat to eat this evening and bread to fill you in the morning, for He has heard your grumbling against Him.
+         Tell them, ‘At twilight you will eat meat, and in the morning you will be filled with bread.
+         So Moses told them, “It is the bread that the LORD has given you to eat.
+
+Exodus 16:28    Then the LORD said to Moses, “How long will you refuse to keep My commandments and instructions?
+Exodus 16:29    Understand that the LORD has given you the Sabbath; that is why on the sixth day He will give you bread for two days.
+
+Exodus 16:31    Now the house of Israel called the bread manna.
+
+Exodus 16:32    Moses said, “This is what the LORD has commanded: ‘Keep an omer of manna for the generations to come, so that they may see the bread I fed you in the wilderness when I brought you out of the land of Egypt.
+        ”
+Exodus 18:12    Then Moses’ father-in-law Jethro brought a burnt offering and sacrifices to God, and Aaron came with all the elders of Israel to eat bread with Moses’ father-in-law in the presence of God.
+
+Exodus 23:15    You are to keep the Feast of Unleavened Bread as I commanded you: At the appointed time in the month of Abib you are to eat unleavened bread for seven days, because that was the month you came out of Egypt.
+
+Exodus 23:25    So you shall serve the LORD your God, and He will bless your bread and your water.
+
+Exodus 29:1     “Now this is what you are to do to consecrate Aaron and his sons to serve Me as priests: Take a young bull and two rams without blemish,
+Exodus 29:2     along with unleavened bread, unleavened cakes mixed with oil, and unleavened wafers anointed with oil.
+
+Exodus 29:22    Take the fat from the ram, the fat tail, the fat covering the entrails, the lobe of the liver, both kidneys with the fat on them, and the right thigh (since this is a ram for ordination),
+Exodus 29:23    along with one loaf of bread, one cake of bread made with oil, and one wafer from the basket of unleavened bread that is before the LORD.        
+
+Exodus 29:22    Take the fat from the ram, the fat tail, the fat covering the entrails, the lobe of the liver, both kidneys with the fat on them, and the right thigh (since this is a ram for ordination),
+Exodus 29:23    along with one loaf of bread, one cake of bread made with oil, and one wafer from the basket of unleavened bread that is before the LORD.        
+
+Exodus 29:22    Take the fat from the ram, the fat tail, the fat covering the entrails, the lobe of the liver, both kidneys with the fat on them, and the right thigh (since this is a ram for ordination),
+Exodus 29:23    along with one loaf of bread, one cake of bread made with oil, and one wafer from the basket of unleavened bread that is before the LORD.        
+
+Exodus 29:32    At the entrance to the Tent of Meeting, Aaron and his sons are to eat the meat of the ram and the bread that is in the basket.
+
+Exodus 29:34    And if any of the meat of ordination or any bread is left until the morning, you are to burn up the remainder.
+         For seven days at the appointed time in the month of Abib, you are to eat unleavened bread as I commanded you.
+        ”
+Exodus 34:28    So Moses was there with the LORD forty days and forty nights without eating bread or drinking water.
+
+Exodus 40:23    He arranged the bread on it before the LORD, just as the LORD had commanded him.
+
+Leviticus 2:5   If your offering is a grain offering prepared on a griddle, it must be unleavened bread made of fine flour mixed with oil.
+
+Leviticus 7:13  Along with his peace offering of thanksgiving he is to present an offering with cakes of leavened bread.
+
+Leviticus 8:1   Then the LORD said to Moses,
+Leviticus 8:2   “Take Aaron and his sons, their garments, the anointing oil, the bull of the sin offering, the two rams, and the basket of unleavened bread,     
+Leviticus 8:3   and assemble the whole congregation at the entrance to the Tent of Meeting.
+
+Leviticus 8:26  And from the basket of unleavened bread that was before the LORD, he took one cake of unleavened bread, one cake of bread made with oil, and one wafer, and he placed them on the fat portions and on the right thigh.
+
+Leviticus 8:26  And from the basket of unleavened bread that was before the LORD, he took one cake of unleavened bread, one cake of bread made with oil, and one wafer, and he placed them on the fat portions and on the right thigh.
+
+Leviticus 8:26  And from the basket of unleavened bread that was before the LORD, he took one cake of unleavened bread, one cake of bread made with oil, and one wafer, and he placed them on the fat portions and on the right thigh.
+
+Leviticus 8:31  And Moses said to Aaron and his sons, “Boil the meat at the entrance to the Tent of Meeting and eat it there with the bread that is in the basket of ordination offerings, as I commanded, saying, ‘Aaron and his sons are to eat it.
+        ’
+Leviticus 8:32  Then you must burn up the remainder of the meat and bread.
+         For seven days you must eat unleavened bread.
+
+Leviticus 23:14 You must not eat any bread or roasted or new grain until the very day you have brought this offering to your God.
+
+Leviticus 23:17 Bring two loaves of bread from your dwellings as a wave offering, each made from two-tenths of an ephah of fine flour, baked with leaven, as the firstfruits to the LORD.
+
+Leviticus 23:18 Along with the bread you are to present seven unblemished male lambs a year old, one young bull, and two rams.
+
+Leviticus 23:20 The priest is to wave the lambs as a wave offering before the LORD, together with the bread of the firstfruits.
+         The bread and the two lambs shall be holy to the LORD for the priest.
+
+Leviticus 24:7  And you are to place pure frankincense near each row, so that it may serve as a memorial portion for the bread, an offering made by fire to the LORD.
+
+Leviticus 24:8  Every Sabbath day the bread is to be set out before the LORD on behalf of the Israelites as a permanent covenant.
+输入要搜索的关键字（或输入'exit'退出）：territory
+
+Genesis 9:27    May God expand the territory of Japheth; may he dwell in the tents of Shem, and may Canaan be his servant.
+
+Genesis 10:30   Their territory extended from Mesha to Sephar, in the eastern hill country.
+
+Genesis 14:7    Then they turned back to invade En-mishpat (that is, Kadesh), and they conquered the whole territory of the Amalekites, as well as the Amorites who lived in Hazazon-tamar.
+
+Genesis 48:6    Any children born to you after them shall be yours, and they shall be called by the names of their brothers in the territory they inherit.       
+
+Exodus 10:4     But if you refuse to let My people go, I will bring locusts into your territory tomorrow.
+
+Exodus 10:14    The locusts swarmed across the land and settled over the entire territory of Egypt.
+输入要搜索的关键字（或输入'exit'退出）：language
+
+Genesis 11:1    Now the whole world had one language and a common form of speech.
+
+Genesis 11:6    And the LORD said, “If they have begun to do this as one people speaking the same language, then nothing they devise will be beyond them.        
+
+Genesis 11:7    Come, let Us go down and confuse their language, so that they will not understand one another’s speech.
+
+Genesis 11:9    That is why it is called Babel, for there the LORD confused the language of the whole world, and from that place the LORD scattered them over the face of all the earth.
+输入要搜索的关键字（或输入'exit'退出）：rainbow
+        ”
+Genesis 9:12    And God said, “This is the sign of the covenant I am making between Me and you and every living creature with you, a covenant for all generations to come:
+Genesis 9:13    I have set My rainbow in the clouds, and it will be a sign of the covenant between Me and the earth.
+
+Genesis 9:14    Whenever I form clouds over the earth and the rainbow appears in the clouds,
+Genesis 9:15    I will remember My covenant between Me and you and every living creature of every kind.
+
+Genesis 9:16    And whenever the rainbow appears in the clouds, I will see it and remember the everlasting covenant between God and every living creature of every kind that is on the earth.
+输入要搜索的关键字（或输入'exit'退出）：backward
+
+Genesis 9:23    Then Shem and Japheth took a garment and placed it across their shoulders, and walking backward, they covered their father’s nakedness.
+
+Genesis 49:17   He will be a snake by the road, a viper in the path that bites the horse’s heels so that its rider tumbles backward.
+输入要搜索的关键字（或输入'exit'退出）：flood
+
+Genesis 7:7     And Noah and his wife, with his sons and their wives, entered the ark to escape the waters of the flood.
+
+Genesis 7:17    For forty days the flood kept coming on the earth, and the waters rose and lifted the ark high above the earth.
+
+Genesis 9:11    And I establish My covenant with you: Never again will all life be cut off by the waters of a flood; never again will there be a flood to destroy the earth.
+
+Genesis 9:11    And I establish My covenant with you: Never again will all life be cut off by the waters of a flood; never again will there be a flood to destroy the earth.
+         Never again will the waters become a flood to destroy all life.
+        ”
+Genesis 9:28    After the flood, Noah lived 350 years.
+
+Genesis 10:1    This is the account of Noah’s sons Shem, Ham, and Japheth, who also had sons after the flood.
+         From these the nations of the earth spread out after the flood.
+         Two years after the flood, when Shem was 100 years old, he became the father of Arphaxad.
+输入要搜索的关键字（或输入'exit'退出）：nation
+
+Genesis 12:2    I will make you into a great nation, and I will bless you; I will make your name great, so that you will be a blessing.
+
+Genesis 15:14   But I will judge the nation they serve as slaves, and afterward they will depart with many possessions.
+         He will become the father of twelve rulers, and I will make him into a great nation.
+
+Genesis 18:17   And the LORD said, “Shall I hide from Abraham what I am about to do?
+Genesis 18:18   Abraham will surely become a great and powerful nation, and through him all the nations of the earth will be blessed.
+        ”
+Genesis 20:4    Now Abimelech had not gone near her, so he replied, “Lord, would You destroy a nation even though it is innocent?
+Genesis 20:5    Didn’t Abraham tell me, ‘She is my sister’? And she herself said, ‘He is my brother.
+
+Genesis 21:13   But I will also make a nation of the slave woman’s son, because he is your offspring.
+
+Genesis 21:18   Get up, lift up the boy, and take him by the hand, for I will make him into a great nation.
+
+Genesis 41:57   And every nation came to Joseph in Egypt to buy grain, because the famine was severe over all the earth.
+         Do not be afraid to go down to Egypt, for I will make you into a great nation there.
+         The hail was so severe that nothing like it had ever been seen in all the land of Egypt from the time it became a nation.
+
+Exodus 19:6     And unto Me you shall be a kingdom of priests and a holy nation.
+
+Exodus 23:27    I will send My terror ahead of you and throw into confusion every nation you encounter.
+         Then I will make you into a great nation.
+         Remember that this nation is Your people.
+         Before all your people I will perform wonders that have never been done in any nation in all the world.
+输入要搜索的关键字（或输入'exit'退出）：account
+
+Genesis 2:4     This is the account of the heavens and the earth when they were created, in the day that the LORD God made them.
+
+Genesis 6:9     This is the account of Noah.
+
+Genesis 10:1    This is the account of Noah’s sons Shem, Ham, and Japheth, who also had sons after the flood.
+
+Genesis 11:10   This is the account of Shem.
+
+Genesis 11:27   This is the account of Terah.
+
+Genesis 12:13   Please say you are my sister, so that I will be treated well for your sake, and on account of you my life will be spared.
+
+Genesis 12:16   He treated Abram well on her account, and Abram acquired sheep and cattle, male and female donkeys, menservants and maidservants, and camels.    
+         Far be it from You! Will not the Judge of all the earth do what is right?”
+Genesis 18:26   So the LORD replied, “If I find fifty righteous ones within the city of Sodom, on their account I will spare the whole place.
+        ”
+Genesis 18:29   Once again Abraham spoke to the LORD, “Suppose forty are found there?” He answered, “On account of the forty, I will not do it.
+        ”
+Genesis 18:31   And Abraham said, “Now that I have ventured to speak to the Lord, suppose twenty are found there?” He answered, “On account of the twenty, I will not destroy it.
+         Suppose ten are found there?” And He answered, “On account of the ten, I will not destroy it.
+         They will kill me on account of my wife.
+        ”
+Genesis 20:17   Then Abraham prayed to God, and God healed Abimelech and his wife and his maidservants, so that they could again bear children—
+Genesis 20:18   for on account of Abraham’s wife Sarah, the LORD had completely closed all the wombs in Abimelech’s household.
+
+Genesis 25:12   This is the account of Abraham’s son Ishmael, whom Hagar the Egyptian, Sarah’s maidservant, bore to Abraham.
+
+Genesis 25:19   This is the account of Abraham’s son Isaac.
+        ” For he was afraid to say, “She is my wife,” since he thought to himself, “The men of this place will kill me on account of Rebekah, because she is so beautiful.
+
+Genesis 26:9    Abimelech sent for Isaac and said, “So she is really your wife! How could you say, ‘She is my sister’?” Isaac replied, “Because I thought I might die on account of her.
+
+Genesis 36:1    This is the account of Esau (that is, Edom).
+
+Genesis 36:9    This is the account of Esau, the father of the Edomites, in the area of Mount Seir.
+
+Genesis 37:2    This is the account of Jacob.
+
+Genesis 39:5    From the time that he put Joseph in charge of his household and all he owned, the LORD blessed the Egyptian’s household on account of him.       
+         Now we must account for his blood!”
+Genesis 42:23   They did not realize that Joseph understood them, since there was an interpreter between them.
+         I am the LORD!’”
+Exodus 6:9      Moses relayed this message to the Israelites, but on account of their broken spirit and cruel bondage, they did not listen to him.
+         But your brothers, the whole house of Israel, may mourn on account of the fire that the LORD has ignited.
+         Directly rebuke your neighbor, so that you will not incur guilt on account of him.
+输入要搜索的关键字（或输入'exit'退出）：drunkenness
+
+Genesis 9:24    When Noah awoke from his drunkenness and learned what his youngest son had done to him,
+Genesis 9:25    he said, “Cursed be Canaan! A servant of servants shall he be to his brothers.
+输入要搜索的关键字（或输入'exit'退出）：exit
